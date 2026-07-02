@@ -1,0 +1,409 @@
+/* ===========================
+   MediCare Plus Hospital
+   style.css
+=========================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* Body */
+
+body{
+    background:#f5f9fc;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ================= NAVBAR ================= */
+
+header{
+    background:#0077b6;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.navbar{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-size:17px;
+    transition:.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active{
+    color:#ffd60a;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    background:linear-gradient(rgba(0,119,182,.6),rgba(0,119,182,.6)),
+    url("../images/banner.jpg");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+/* ================= BUTTON ================= */
+
+.btn{
+    display:inline-block;
+    background:#2ecc71;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:30px;
+    font-size:18px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#27ae60;
+}
+
+/* ================= PAGE BANNER ================= */
+
+.page-banner{
+    background:#0077b6;
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.page-banner h1{
+    font-size:40px;
+}
+
+.page-banner p{
+    margin-top:10px;
+}
+
+/* ================= SECTIONS ================= */
+
+section{
+    padding:60px 10%;
+}
+
+section h2{
+    text-align:center;
+    color:#0077b6;
+    margin-bottom:35px;
+    font-size:34px;
+}
+
+/* ================= CARD CONTAINER ================= */
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+/* ================= CARD ================= */
+
+.card{
+    background:white;
+    border-radius:12px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#0077b6;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#555;
+}
+
+/* ================= DOCTOR IMAGE ================= */
+
+.card img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+/* ================= ABOUT ================= */
+
+.about-preview,
+.about-section,
+.mission,
+.vision{
+    text-align:center;
+}
+
+.about-preview p,
+.about-section p,
+.mission p,
+.vision p{
+    max-width:900px;
+    margin:auto;
+    font-size:18px;
+}
+
+/* ================= HEALTH TIPS ================= */
+
+.tips ul{
+    max-width:700px;
+    margin:auto;
+    list-style:square;
+    font-size:18px;
+}
+
+.tips li{
+    margin:12px 0;
+}
+
+/* ================= EMERGENCY ================= */
+
+.emergency{
+    background:#e63946;
+    color:white;
+    text-align:center;
+}
+
+.emergency h2{
+    color:white;
+}
+
+.emergency h3{
+    font-size:36px;
+    margin:15px 0;
+}
+
+/* ================= GALLERY ================= */
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.gallery-item{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+}
+
+.gallery-item img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+.gallery-item p{
+    text-align:center;
+    padding:12px;
+    font-weight:500;
+}
+
+/* ================= FORM ================= */
+
+form{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+form input,
+form select,
+form textarea{
+    width:100%;
+    padding:14px;
+    margin:12px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+form textarea{
+    resize:none;
+}
+
+form button{
+    width:100%;
+    background:#0077b6;
+    color:white;
+    border:none;
+    padding:15px;
+    font-size:18px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+form button:hover{
+    background:#005f8d;
+}
+
+/* ================= CONTACT DETAILS ================= */
+
+.contact-details{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.contact-details p{
+    margin:10px;
+    font-size:18px;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#023e8a;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+footer h3{
+    margin-bottom:10px;
+}
+
+footer p{
+    margin:8px 0;
+}
+
+/* ================= TABLET ================= */
+
+@media(max-width:992px){
+
+.hero h1{
+    font-size:40px;
+}
+
+.navbar{
+    flex-direction:column;
+}
+
+.nav-links{
+    margin-top:15px;
+}
+
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+.hero{
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:32px;
+}
+
+.hero p{
+    font-size:17px;
+}
+
+.nav-links{
+    flex-direction:column;
+    align-items:center;
+}
+
+.nav-links li{
+    margin:10px 0;
+}
+
+.logo{
+    margin-bottom:10px;
+}
+
+.page-banner h1{
+    font-size:30px;
+}
+
+section{
+    padding:40px 20px;
+}
+
+.card img{
+    width:120px;
+    height:120px;
+}
+
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media(max-width:480px){
+
+.hero h1{
+    font-size:26px;
+}
+
+.btn{
+    padding:12px 25px;
+    font-size:16px;
+}
+
+section h2{
+    font-size:28px;
+}
+
+}
